@@ -10,29 +10,30 @@ import Browse from "./user/components/Browse/Browse";
 import Search from "./user/components/Search/Search"
 import About from "./user/components/About/About"
 import Login from "./user/components/Login/Login"
-import About from "./user/components/GetStarted/GetStarted"
+import GetStarted from "./user/components/GetStarted/GetStarted";
+import Contact from "./user/components/Contact/Contact";
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <Layout />,
-    
+
     children: [
       {
         path: "",
-        element:<Home />
+        element: <Home />
       },
       {
-        path:"browse",
-        element:<Browse />
+        path: "browse",
+        element: <Browse />
       },
       {
-        path:"search",
-        element:<Search />
+        path: "search",
+        element: <Search />
       },
       {
-        path:"about",
-        element:<About />
+        path: "about",
+        element: <About />
       },
       {
         path: "login",
@@ -43,11 +44,11 @@ const router = createBrowserRouter([
         element: <GetStarted />
       },
       {
-        path:"contact",
-        element:<Contact />
+        path: "contact",
+        element: <Contact />
       }, {
         path: "admin",
-        element:<Admin />
+        element: <Admin />
       }
     ]
   }
